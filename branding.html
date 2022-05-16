@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ----------------SEO-Optimization---------------- -->
+    <meta name=“description” content="Doug Bell, a painter and artist in San Francisco, California. Paints figurative art, portrait art, paints mainly in oil, combining  water color techniques." />
+    <meta name="keywords" content="Doug Bell, Doug, Bell, Artist, Painting">
+    <meta name="author" content="Doug Bell">
+    <!-- Google Site Verification -->
+    <meta name="google-site-verification" content="DogpcsIsv8MfOJNDSMVMBvUm1QvIUQ4CYFODmIn3haI"/>
+    <!-- ----------------SEO-Optimization---------------- -->
+    <title>Doug Bell | Art</title>
+    <!-- Adobe Fonts -->
+    <!-- Trajan Pro -->
+    <link rel="stylesheet" href="https://use.typekit.net/grw1owp.css">
+    <!-- Google Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b1974bca5b.js" crossorigin="anonymous"></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <!-- <header class="header" id="header">
+        <div class="container"></div>
+    </header> -->
+    <!-- Bar -->
+    <div class="bar">
+        <div class="bar__content u-centered">
+            <img class="bar__logo" src="img/doug-bell-logo-03.png" alt="logo image">
+            <input type="checkbox" id="inpNavToggle">
+            <label class="bar__nav-toggle" for="inpNavToggle">
+                <i class="material-icons">segment</i>
+            </label>
+            <nav class="nav">
+                <a class="nav__link" href="index.html">Home</a>
+                <a class="nav__link" href="portraiture.html">Portraiture</a>
+                <a class="nav__link" href="figurative.html">Figurative</a>
+                <a class="nav__link" href="about.html">About</a>
+                <a class="nav__link" href="branding.html">Branding</a>
+                <a class="btn-primary" href="#contact">Contact</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Header Javascript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver(entries => {
+                document.querySelector(".bar").classList.toggle("bar--bg", entries[0].intersectionRatio < 1)
+            }, {
+                threshold: 1
+            });
+            
+            observer.observe(document.querySelector(".header"));
+        });
+        </script>
+
+<!-- Branding Section -->
+<section class="branding">
+    <div class="container">
+        <img src="img/doug-bell-package-01.png" alt="branding package">
+    </div>
+</section>
+
+<!-- Footer Section -->
+<section class="footer">
+    <div class="container">
+        <div class="footer-box">
+        <div class="footer-contact">
+            <!-- Contact Box -->
+            <div class="contact-box">
+                <h3 class="margin-bottom-2">Contact Me</h3>
+                <form action="">
+                    <div class="contact-item">
+                        <h5>Name*</h5>
+                        <input type="text" name="First Name" id="" class="input" placeholder="Name" required>
+                    </div>
+                    <div class="contact-item">
+                        <h5>Phone Number*</h5>
+                        <input type="text" name="First Name" id="" class="input" placeholder="Phone Number" required>
+                    </div>
+                    <div class="contact-item">
+                        <h5>Email*</h5>
+                        <input type="text" name="First Name" id="" class="input" placeholder="Email" required>
+                    </div>
+                    <div class="contact-item">
+                        <h5>Message*</h5>
+                        <textarea name="Message" id="" cols="30" rows="10" placeholder="Message" required></textarea>
+                    </div>
+                    <div class="contact-submit">
+                        <div class="contact-button">
+                            <a href="#">Submit</a>
+                        </div>
+                        <!-- <input type="submit" value="" class="btn-primary"> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer-map">
+            <h3 class="margin-bottom-2">Site Map</h3>
+            <ul>
+                <a href="index.html" ><li>Home</li></a>
+                <a href="portraiture.html"><li>Portraiture</li></a>
+                <a href="figurative.html"><li>Figurative</li></a>
+                <a href="about.html"><li>About</li></a>
+            </ul>
+        </div>
+        <div class="footer-info">
+            <h3 class="margin-bottom-2">Contact Info</h3>
+            <a href="tel:832-546-8080"><li>(111) - 222 - 3333</li></a>
+            <a href="mailto:artdougbell@aol.com"><li>artdougbell@aol.com</li></a>
+            <a href="https://logo-genius.com/"><li>Developed By Logo Genius</li></a>
+            <a href="#"><li>Copyright @ 2021. All rights reserved by Doug Bell.</li></a>
+            <div class="footer-socials">
+                <a href="#"><li><i class="fab fa-instagram"></i></li></a>
+                <a href=""><li><i class="fab fa-facebook-f"></i></li></a>
+                <a href="#"><li><i class="fab fa-twitter"></i></li></a>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
